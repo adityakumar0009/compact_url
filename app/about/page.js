@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 export const metadata = {
     title: 'About - Compact URL',
     description: 'Learn more about Compact URL',
@@ -34,10 +36,10 @@ export const metadata = {
   
           {/* Illustration */}
           <div className="lg:w-1/2 flex justify-center animate-fade-in-up delay-150">
-            <img
+            <Image
               src="/about.svg"
               alt="Team working illustration"
-              className="w-full max-w-md rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500"
+              className="w-full max-w-md rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500"  width={200} height={200}
             />
           </div>
         </section>
@@ -46,12 +48,12 @@ export const metadata = {
         <section className="relative z-10 bg-purple-700 text-white py-12 px-6 text-center shadow-inner">
           <h3 className="text-3xl font-bold mb-4">Ready to make your links compact?</h3>
           <p className="text-lg mb-6">Start shortening your links in seconds — it's fast, simple, and free.</p>
-          <a
+          <Link
             href="/shorten"
             className="inline-block bg-white text-purple-700 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
           >
             Get Started
-          </a>
+          </Link>
         </section>
   
         {/* Footer */}

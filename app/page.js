@@ -11,10 +11,12 @@ export default function Home() {
             The Best URL Shortener in the Market
           </h1>
           <p className="text-gray-700 text-lg max-w-lg text-center md:text-left">
-            At <span className="font-semibold text-purple-600">Compact URL</span>, simplicity
-            isn’t just a feature — it’s our philosophy. Shortening a link should be fast,
-            distraction-free, and elegant.
+            At{" "}
+            <span className="font-semibold text-purple-600">Compact URL</span>,
+            simplicity isn&rsquo;t just a feature — it&rsquo;s our philosophy.
+            Shortening a link should be fast, distraction-free, and elegant.
           </p>
+
           <div className="flex gap-4">
             <Link href="/shorten">
               <button className="bg-pink-600 hover:bg-pink-700 transition text-white px-6 py-2 rounded-lg shadow font-semibold">
@@ -43,7 +45,9 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="py-2 px-6 text-center">
-        <h2 className="text-3xl font-bold text-purple-700 mb-10">Why Choose Compact URL?</h2>
+        <h2 className="text-3xl font-bold text-purple-700 mb-10">
+          Why Choose Compact URL?
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
@@ -67,7 +71,9 @@ export default function Home() {
               className="p-6 bg-white rounded-lg shadow hover:shadow-md transition"
             >
               <div className="text-4xl mb-4">{item.emoji}</div>
-              <h3 className="text-xl font-semibold text-purple-600">{item.title}</h3>
+              <h3 className="text-xl font-semibold text-purple-600">
+                {item.title}
+              </h3>
               <p className="text-gray-600 mt-2">{item.desc}</p>
             </div>
           ))}
@@ -76,7 +82,9 @@ export default function Home() {
 
       {/* How It Works Section */}
       <section className="py-16 px-6 bg-purple-50 text-center">
-        <h2 className="text-3xl font-bold text-purple-700 mb-10">How It Works</h2>
+        <h2 className="text-3xl font-bold text-purple-700 mb-10">
+          How It Works
+        </h2>
         <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
           {[
             {

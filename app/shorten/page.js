@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-const shorten = () => {
+const Shorten = () => {
   const [url, setUrl] = useState("");
   const [shorturl, setshortUrl] = useState("");
   const [generated, setGenerated] = useState("");
@@ -70,4 +70,4 @@ const shorten = () => {
   );
 };
 
-export default shorten;
+export default Shorten;
